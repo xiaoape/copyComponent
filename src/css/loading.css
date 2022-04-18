@@ -1,0 +1,83 @@
+.loadEffect{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.loadEffect span{
+    display: inline-block;
+    width: 16%;
+    height: 16%;
+    border-radius: 50%;
+    background: lightgreen;
+    position: absolute;
+    animation: load 1.04s ease infinite;
+    /* -webkit-animation: load 1.04s ease infinite; */
+}
+@keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+/* @-webkit-keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+} */
+.loadEffect span:nth-child(1){
+    left: 0;
+    top: 50%;
+    margin-top:-8%;
+    animation-delay:0.13s;
+    /* -webkit-animation-delay:0.13s; */
+}
+.loadEffect span:nth-child(2){
+    left: 14%;
+    top: 14%;
+    animation-delay:0.26s;
+    /* -webkit-animation-delay:0.26s; */
+}
+.loadEffect span:nth-child(3){
+    left: 50%;
+    top: 0;
+    margin-left: -8%;
+    animation-delay:0.39s;
+    /* -webkit-animation-delay:0.39s; */
+}
+.loadEffect span:nth-child(4){
+    top: 14%;
+    right:14%;
+    animation-delay:0.52s;
+    /* -webkit-animation-delay:0.52s; */
+}
+.loadEffect span:nth-child(5){
+    right: 0;
+    top: 50%;
+    margin-top:-8%;
+    animation-delay:0.65s;
+    /* -webkit-animation-delay:0.65s; */
+}
+.loadEffect span:nth-child(6){
+    right: 14%;
+    bottom:14%;
+    animation-delay:0.78s;
+    /* -webkit-animation-delay:0.78s; */
+}
+.loadEffect span:nth-child(7){
+    bottom: 0;
+    left: 50%;
+    margin-left: -8%;
+    animation-delay:0.91s;
+    /* -webkit-animation-delay:0.91s; */
+}
+.loadEffect span:nth-child(8){
+    bottom: 14%;
+    left: 14%;
+    animation-delay:1.04s;
+    /* -webkit-animation-delay:1.04s; */
+}
